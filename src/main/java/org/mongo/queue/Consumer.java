@@ -28,6 +28,11 @@ public class Consumer extends AbstractConsumer {
 
     public Consumer() throws JMSException, UnknownHostException {
         super();
+        /**
+         * Default port and host for ConnectionFactory:
+         * imqBrokerHostName=localhost
+         * imqBrokerHostPort=7676
+         */
         cf = new com.sun.messaging.ConnectionFactory();
         connection = cf.createConnection();
         session = connection.createSession(true, Session.SESSION_TRANSACTED);

@@ -23,6 +23,11 @@ public class Producer extends AbstractGenericType {
     private final MessageProducer producer;
 
     public Producer() throws JMSException {
+        /**
+         * Default port and host for ConnectionFactory:
+         * imqBrokerHostName=localhost
+         * imqBrokerHostPort=7676
+         */
         cf = new com.sun.messaging.ConnectionFactory();
         connection = cf.createConnection();
         session = connection.createSession(true, Session.SESSION_TRANSACTED);
