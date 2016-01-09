@@ -1,8 +1,7 @@
 package org.mongo.tail.exception;
 
 /**
- * User: Sanzhar Aubakirov
- * Date: 1/8/16
+ * This exception should be used if message producer failed to send message
  */
 public class QueuePublishException extends Exception {
     public QueuePublishException(String message) {
