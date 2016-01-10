@@ -1,6 +1,6 @@
 # java-mongo-connector
 
-This project is Java based alternative to mongo-connector. It is reading MongoDB oplog and reproduce appropriate actions in ElasticSearch.
+This project is Java based alternative to mongo-connector. It is reading MongoDB oplog and reproduce appropriate actions in ElasticSearch. Code based on [this](http://jaihirsch.github.io/straw-in-a-haystack/mongodb/2014/08/18/mongo-oplog-tailing/) tutorial
 
 
 **Producer** is tailing MongoDB oplog and sends messages to [JMS queue](https://mq.java.net/)
